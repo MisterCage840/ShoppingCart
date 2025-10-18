@@ -27,7 +27,11 @@ Responsive design with CSS Modules
 🧩 Technologies
 Category	Tools Used
 Frontend	React, Vite
+
 State Management	React Context API
+
 Testing	Vitest, React Testing Library
+
 Styling	CSS Modules
+
 API	FakeStore API
