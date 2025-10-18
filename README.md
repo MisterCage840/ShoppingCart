@@ -1,12 +1,33 @@
-# React + Vite
+🛍️ MB Shopping
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple shopping app built with React + Vite, featuring:
 
-Currently, two official plugins are available:
+Reusable components (Header, Footer, ProductCard, CartSummary)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Global Cart State using React Context
 
-## Expanding the ESLint configuration
+Vitest + Testing Library unit tests for components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Mock API data fetched from Fake Store API
+
+Responsive design with CSS Modules
+
+🚀 Features
+
+🛒 Add/remove items from cart
+
+🧮 Automatic subtotal calculation
+
+🧱 Organized folder structure
+
+✅ Tested components with Vitest
+
+⚡ Fast build & dev environment (Vite)
+
+🧩 Technologies
+Category	Tools Used
+Frontend	React, Vite
+State Management	React Context API
+Testing	Vitest, React Testing Library
+Styling	CSS Modules
+API	FakeStore API
