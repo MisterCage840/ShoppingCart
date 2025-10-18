@@ -1,0 +1,31 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  color: #dedede;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  z-index: 1000;
+}
+
+.footerMain span {
+  font-weight: bold;
+  font-style: italic;
+  color: #6e6ed4;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.nav a {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  background-color: #1a1a1a;
+  color: #dedede;
+}

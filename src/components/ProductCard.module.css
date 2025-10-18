@@ -1,0 +1,105 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  justify-items: center;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+  padding-bottom: var(--footer-h, 80px); /* space for fixed footer */
+}
+
+/* Product card styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  width: 100%;
+  max-width: 260px;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0.5rem 0;
+  line-height: 1.3;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* show up to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(1.3em * 2); /* keep height consistent */
+  word-break: break-word; /* break very long words */
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0.25rem 0;
+  line-height: 1.4;
+  max-height: 4.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.price {
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    padding-bottom: var(--footer-h, 80px);
+  }
+
+  .card {
+    max-width: 200px;
+    padding: 0.75rem;
+  }
+
+  .card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card h3 {
+    font-size: 0.9rem;
+    height: auto;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2;
+  }
+}

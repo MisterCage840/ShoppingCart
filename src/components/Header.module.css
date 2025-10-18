@@ -1,0 +1,87 @@
+/* --- constants --- */
+:root {
+  --header-height: 64px; /* adjust if your header is taller */
+}
+
+/* --- header --- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: #1a1a1a;
+  color: #dedede;
+  z-index: 1000; /* stay above page content */
+  box-sizing: border-box;
+}
+
+/* store name */
+.logo {
+  font-size: 1.5rem;
+}
+
+/* nav links */
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* space between icon & text */
+  color: #dedede;
+  text-decoration: none;
+  padding: 6px 8px; /* better tap target on mobile */
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+  background: transparent; /* avoid covering content behind */
+}
+
+.nav a:hover {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+.header + * {
+  margin-top: var(--header-height);
+}
+
+@media (max-width: 600px) {
+  :root {
+    --header-height: 72px;
+  }
+  .nav a {
+    padding: 8px 10px;
+  }
+}
+.cartIcon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The badge that shows the quantity */
+.cartQty {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: #e63946; /* red badge */
+  color: white;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
